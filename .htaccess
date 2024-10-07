@@ -1,0 +1,43 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,END]
+
+RewriteRule ^/?index\.html$ /home [R=301,END]
+RewriteRule ^/?home/?$ /index.html [END]
+
+RewriteRule ^/?about\.html$ /about [R=301,END]
+RewriteRule ^/?about/?$ /about.html [END]
+
+RewriteRule ^/?contact\.html$ /contact [R=301,END]
+RewriteRule ^/?contact/?$ /contact.html [END]
+
+RewriteRule ^/?blogs\.html$ /blogs [R=301,END]
+RewriteRule ^/?blogs/?$ /blogs.html [END]
+
+RewriteRule ^/?google-reviews\.html$ /google-reviews [R=301,END]
+RewriteRule ^/?google-reviews/?$ /google-reviews.html [END]
+
+RewriteRule ^/?interventional-radiology\.html$ /interventional-radiology [R=301,END]
+RewriteRule ^/?interventional-radiology/?$ /interventional-radiology.html [END]
+
+RewriteRule ^/?patient-stories\.html$ /patient-stories [R=301,END]
+RewriteRule ^/?patient-stories/?$ /patient-stories.html [END]
+
+RewriteRule ^/?specializations\.html$ /specializations [R=301,END]
+RewriteRule ^/?specializations/?$ /specializations.html [END]
+
+RewriteRule ^/?training\.html$ /training [R=301,END]
+RewriteRule ^/?training/?$ /training.html [END]
+
+RewriteRule ^/?treatment-fibroid\.html$ /treatment-fibroid [R=301,END]
+RewriteRule ^/?treatment-fibroid/?$ /treatment-fibroid.html [END]
+
+RewriteRule ^/?treatment-prostate\.html$ /treatment-prostate [R=301,END]
+RewriteRule ^/?treatment-prostate/?$ /treatment-prostate.html [END]
+
+RewriteRule ^/?treatment-varicocele\.html$ /treatment-varicocele [R=301,END]
+RewriteRule ^/?treatment-varicocele/?$ /treatment-varicocele.html [END]
+
+RewriteRule ^/?treatment-varicose\.html$ /treatment-varicose [R=301,END]
+RewriteRule ^/?treatment-varicose/?$ /treatment-varicose.html [END]
